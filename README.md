@@ -49,7 +49,7 @@ $ docker build -t mern-app .
 $ docker run -p 5000:5000 --env-file .env mern-app
 
 # To run in background
-$ docker run -p 5000:5000 --env-file .env mern-app
+$ docker run -d -p 5000:5000 --env-file .env mern-app
 
 # To Stop
 $ docker ps
@@ -57,4 +57,7 @@ $ docker stop <container_id>
 
 # To list docker images
 $ docker images
+
+# To remove docker images
+$ docker rmi <image_id>
 ```
