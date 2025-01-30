@@ -27,17 +27,17 @@ Make sure you have the following installed on your system:
 
 ```Shell
 # clone repo
-git clone git@github.com:iambkv/mern-crash-course.git
+$ git clone git@github.com:iambkv/mern-crash-course.git
 
 # change directory
-cd mern-crash-course
+$ cd mern-crash-course
 
 # Create build folder
-npm run build
+$ npm run build
 
 # Run the app
-npm run start
-
+$ npm run start
+```
 
 ## Run with Docker locally
 
