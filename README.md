@@ -23,7 +23,7 @@ Make sure you have the following installed on your system:
 
 ### 1. Clone the repository
 
-## Run Locally
+## Run app on Local
 
 ```Shell
 # clone repo
@@ -39,7 +39,7 @@ $ npm run build
 $ npm run start
 ```
 
-## Run with Docker locally
+## Run with Docker on local
 
 ```Shell
 # Command to build
