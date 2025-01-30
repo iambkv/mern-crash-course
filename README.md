@@ -23,7 +23,7 @@ Make sure you have the following installed on your system:
 
 ### 1. Clone the repository
 
-## Run app on Local
+## Run app on local
 
 ```Shell
 # Command to clone repo
