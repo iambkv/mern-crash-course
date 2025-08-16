@@ -32,12 +32,19 @@ $ git clone git@github.com:iambkv/mern-crash-course.git
 # Command to change directory
 $ cd mern-crash-course
 
+# Update MongoDB URL in .env file
+  MONGO_URI= <Enter MONGODB URL Here>
+
+# Command to set the environment local
+$ $env:NODE_ENV="development"
+
 # Command to build app
 $ npm run build
 
 # Command to run app
 $ npm run start
 ```
+
 
 ## Run with Docker on local
 
