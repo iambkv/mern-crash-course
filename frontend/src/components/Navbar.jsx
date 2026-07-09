@@ -1,10 +1,11 @@
-import { Button, color, Container, Flex, HStack, Text, useColorMode } from "@chakra-ui/react";
+import { Button, Container, Flex, HStack, Text, useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { AiOutlinePlusSquare } from "react-icons/ai"; // Import from React Icons
+import { AiOutlinePlusSquare } from "react-icons/ai";
+import { useAuthStore } from "../store/auth";
 
 const Navbar = () => {
-
   const { colorMode, toggleColorMode } = useColorMode();
+  const { user, logout } = useAuthStore();
 
   return (
     <Container maxW='container.xl' px={4}>
@@ -27,12 +28,19 @@ const Navbar = () => {
         </Text>
 
         <HStack spacing={2} alignItems={"center"}>
-          <Link to={'/create'}>
-            <Button>
-              <AiOutlinePlusSquare fontSize={20} />
-            </Button>
-          </Link>
+          {user && (
+            <Link to={'/create'}>
+              <Button>
+                <AiOutlinePlusSquare fontSize={20} />
+              </Button>
+            </Link>
+          )}
           <Button onClick={toggleColorMode}>{colorMode === "light" ? 'Light' : "Dark"}</Button>
+          {user && (
+            <Button colorScheme="red" variant="outline" onClick={logout}>
+              Logout
+            </Button>
+          )}
         </HStack>
       </Flex>
     </Container>
