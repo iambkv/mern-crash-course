@@ -3,8 +3,162 @@
 
 ---
 
+## 📋 Table of Contents (Click to Jump)
+
+### 🚀 Scenario 1: API Performance
+| # | Question | Link |
+|---|----------|------|
+| Q1 | API returns 1 lakh records. How will you optimize it? | [Jump →](#q1-api-returns-1-lakh-100000-records-how-will-you-optimize-it) |
+| Q2 | API response takes 15 seconds. What will you check? | [Jump →](#q2-api-response-takes-15-seconds-what-will-you-check) |
+| Q3 | Database query is slow. How will you debug it? | [Jump →](#q3-database-query-is-slow-how-will-you-debug-it) |
+| Q4 | How will you identify whether the issue is in Node.js or Database? | [Jump →](#q4-how-will-you-identify-whether-the-issue-is-in-nodejs-or-database) |
+| Q5 | API is consuming high CPU. What steps will you take? | [Jump →](#q5-api-is-consuming-high-cpu-what-steps-will-you-take) |
+| Q6 | API memory usage keeps increasing. What could be the reason? | [Jump →](#q6-api-memory-usage-keeps-increasing-what-could-be-the-reason) |
+| Q7 | API works fine locally but is slow in production. How will you investigate? | [Jump →](#q7-api-works-fine-locally-but-is-slow-in-production-how-will-you-investigate) |
+
+### 🗄️ Scenario 2: MongoDB
+| # | Question | Link |
+|---|----------|------|
+| Q8 | Collection has 5 crore records. Search is slow. What will you do? | [Jump →](#q8-collection-has-5-crore-50-million-records-search-is-slow-what-will-you-do) |
+| Q9 | Aggregation pipeline is taking 20 seconds. How will you optimize it? | [Jump →](#q9-aggregation-pipeline-is-taking-20-seconds-how-will-you-optimize-it) |
+| Q10 | Which fields would you index and why? | [Jump →](#q10-which-fields-would-you-index-and-why) |
+| Q11 | How do you identify missing indexes? | [Jump →](#q11-how-do-you-identify-missing-indexes) |
+| Q12 | What happens if you create indexes on every field? | [Jump →](#q12-what-happens-if-you-create-indexes-on-every-field) |
+| Q13 | Duplicate records are getting inserted. How will you prevent this? | [Jump →](#q13-duplicate-records-are-getting-inserted-how-will-you-prevent-this) |
+| Q14 | Multiple users update the same document. How will you handle it? | [Jump →](#q14-multiple-users-update-the-same-document-at-the-same-time-how-will-you-handle-it) |
+
+### 🔐 Scenario 3: Authentication
+| # | Question | Link |
+|---|----------|------|
+| Q15 | JWT token expires while user is working. What should happen? | [Jump →](#q15-jwt-token-expires-while-the-user-is-working-what-should-happen) |
+| Q16 | A user logs out. How will you invalidate the JWT? | [Jump →](#q16-a-user-logs-out-how-will-you-invalidate-the-jwt) |
+| Q17 | Someone steals a JWT token. How can you reduce the impact? | [Jump →](#q17-someone-steals-a-jwt-token-how-can-you-reduce-the-impact) |
+| Q18 | Admin should access only admin APIs. How will you implement it? | [Jump →](#q18-admin-should-access-only-admin-apis-how-will-you-implement-it) |
+| Q19 | Users making requests without authentication. How will you secure? | [Jump →](#q19-users-are-making-requests-without-authentication-how-will-you-secure-the-apis) |
+
+### 🛡️ Scenario 4: Security
+| # | Question | Link |
+|---|----------|------|
+| Q20 | API receiving 10,000 requests/min from one IP. What will you do? | [Jump →](#q20-your-api-is-receiving-10000-requests-per-minute-from-one-ip-what-will-you-do) |
+| Q21 | Someone trying SQL/NoSQL Injection. How will you prevent? | [Jump →](#q21-someone-is-trying-sqlnosql-injection-how-will-you-prevent-it) |
+| Q22 | How do you protect against XSS attacks? | [Jump →](#q22-how-do-you-protect-against-xss-attacks) |
+| Q23 | API exposed publicly. What security measures before deployment? | [Jump →](#q23-api-is-exposed-publicly-what-security-measures-will-you-implement-before-deployment) |
+| Q24 | Passwords stored in plain text. How to migrate to hashed? | [Jump →](#q24-passwords-are-stored-in-plain-text-in-an-old-project-how-would-you-migrate-to-hashed-passwords) |
+
+### 📁 Scenario 5: File Upload
+| # | Question | Link |
+|---|----------|------|
+| Q25 | Users upload 5 GB videos. How will you handle them? | [Jump →](#q25-users-upload-5-gb-videos-how-will-you-handle-them) |
+| Q26 | Users upload 100 images simultaneously. What problems? | [Jump →](#q26-users-upload-100-images-simultaneously-what-problems-can-occur) |
+| Q27 | How will you validate uploaded files? | [Jump →](#q27-how-will-you-validate-uploaded-files) |
+| Q28 | Where will you store uploaded files in AWS? | [Jump →](#q28-where-will-you-store-uploaded-files-in-aws) |
+| Q29 | How will you generate unique file names? | [Jump →](#q29-how-will-you-generate-unique-file-names) |
+
+### ⚙️ Scenario 6: Express.js
+| # | Question | Link |
+|---|----------|------|
+| Q30 | Middleware is not getting executed. How will you debug it? | [Jump →](#q30-middleware-is-not-getting-executed-how-will-you-debug-it) |
+| Q31 | A request never reaches the controller. What could be wrong? | [Jump →](#q31-a-request-never-reaches-the-controller-what-could-be-wrong) |
+| Q32 | API always returns 500 error. How will you debug it? | [Jump →](#q32-api-always-returns-500-internal-server-error-how-will-you-debug-it) |
+| Q33 | How do you implement centralized error handling? | [Jump →](#q33-how-do-you-implement-centralized-error-handling) |
+
+### 🟢 Scenario 7: Node.js
+| # | Question | Link |
+|---|----------|------|
+| Q34 | Server CPU suddenly reaches 100%. How will you investigate? | [Jump →](#q34-server-cpu-suddenly-reaches-100-how-will-you-investigate) |
+| Q35 | Node.js server crashes every few hours. What will you check? | [Jump →](#q35-nodejs-server-crashes-every-few-hours-what-will-you-check-first) |
+| Q36 | Application has a memory leak. How will you identify it? | [Jump →](#q36-the-application-has-a-memory-leak-how-will-you-identify-it) |
+| Q37 | Long-running calculation blocks all requests. How to solve? | [Jump →](#q37-a-long-running-calculation-blocks-all-requests-how-would-you-solve-this) |
+| Q38 | Third-party API taking 30 seconds. How to protect your app? | [Jump →](#q38-a-third-party-api-is-taking-30-seconds-to-respond-how-will-you-protect-your-application) |
+
+### 🐳 Scenario 8: Docker
+| # | Question | Link |
+|---|----------|------|
+| Q39 | Docker container starts and exits immediately. Reasons? | [Jump →](#q39-docker-container-starts-and-exits-immediately-what-are-the-possible-reasons) |
+| Q40 | Container works locally but not on server. How to debug? | [Jump →](#q40-container-works-locally-but-not-on-the-server-how-will-you-debug-it) |
+| Q41 | Environment variables missing inside container. What to check? | [Jump →](#q41-environment-variables-are-missing-inside-the-container-what-will-you-check) |
+
+### ☁️ Scenario 9: AWS
+| # | Question | Link |
+|---|----------|------|
+| Q42 | EC2 running but app not accessible. What will you check? | [Jump →](#q42-ec2-instance-is-running-but-the-application-is-not-accessible-what-will-you-check) |
+| Q43 | Users cannot upload to S3. Possible reasons? | [Jump →](#q43-users-cannot-upload-files-to-s3-what-are-the-possible-reasons) |
+| Q44 | CloudWatch shows high CPU. How will you proceed? | [Jump →](#q44-cloudwatch-shows-high-cpu-usage-how-will-you-proceed) |
+| Q45 | App unavailable after deployment. What steps? | [Jump →](#q45-application-becomes-unavailable-after-deployment-what-steps-will-you-take) |
+
+### 🔗 Scenario 10: Microservices
+| # | Question | Link |
+|---|----------|------|
+| Q46 | One microservice is down. How will others behave? | [Jump →](#q46-one-microservice-is-down-how-will-other-services-behave) |
+| Q47 | Notification service slow. Sync or async? Why? | [Jump →](#q47-notification-service-is-slow-will-you-call-it-synchronously-or-asynchronously-why) |
+| Q48 | How will two microservices communicate securely? | [Jump →](#q48-how-will-two-microservices-communicate-securely) |
+| Q49 | How to trace request through multiple microservices? | [Jump →](#q49-how-will-you-trace-a-request-that-passes-through-multiple-microservices) |
+
+### ⚡ Scenario 11: Caching
+| # | Question | Link |
+|---|----------|------|
+| Q50 | Product API gets 50,000 req/min. How to reduce DB load? | [Jump →](#q50-product-api-receives-50000-requests-per-minute-how-will-you-reduce-database-load) |
+| Q51 | Cached data outdated. How to refresh/invalidate? | [Jump →](#q51-cached-data-becomes-outdated-how-will-you-refresh-or-invalidate-the-cache) |
+| Q52 | Redis goes down. How should the app behave? | [Jump →](#q52-redis-goes-down-how-should-the-application-behave) |
+
+### 📊 Scenario 12: Logging & Monitoring
+| # | Question | Link |
+|---|----------|------|
+| Q53 | Production issue can't be reproduced locally. How to investigate? | [Jump →](#q53-production-issue-is-reported-but-no-one-can-reproduce-it-locally-how-will-you-investigate) |
+| Q54 | Intermittent failures. Which logs/metrics to check? | [Jump →](#q54-users-report-intermittent-failures-which-logs-and-metrics-will-you-check) |
+| Q55 | How to correlate logs across multiple services? | [Jump →](#q55-how-would-you-correlate-logs-across-multiple-services) |
+
+### 🚢 Scenario 13: Deployment & CI/CD
+| # | Question | Link |
+|---|----------|------|
+| Q56 | Deployment failed. What is your rollback strategy? | [Jump →](#q56-deployment-failed-in-production-what-is-your-rollback-strategy) |
+| Q57 | Tests pass locally but fail in CI. What could be the reasons? | [Jump →](#q57-tests-pass-locally-but-fail-in-the-ci-pipeline-what-could-be-the-reasons) |
+| Q58 | How to ensure zero downtime during deployment? | [Jump →](#q58-how-do-you-ensure-zero-or-minimal-downtime-during-deployment) |
+
+### 📐 Scenario 14: API Design
+| # | Question | Link |
+|---|----------|------|
+| Q59 | Introducing breaking API change. How to avoid affecting clients? | [Jump →](#q59-you-need-to-introduce-a-breaking-api-change-how-will-you-avoid-affecting-existing-clients) |
+| Q60 | Two teams consume your API. How to maintain backward compatibility? | [Jump →](#q60-two-different-teams-consume-your-api-how-will-you-maintain-backward-compatibility) |
+
+### 💼 Scenario 15: Project-Based Questions
+| # | Question | Link |
+|---|----------|------|
+| Q61 | Explain one API you built from end to end | [Jump →](#q61-explain-one-api-you-built-from-end-to-end) |
+| Q62 | Which part of your project are you most proud of? | [Jump →](#q62-which-part-of-your-project-are-you-most-proud-of-and-why) |
+| Q63 | Most challenging production bug you fixed | [Jump →](#q63-tell-us-about-the-most-challenging-production-bug-you-fixed) |
+| Q64 | How did you optimize one slow API? | [Jump →](#q64-how-did-you-optimize-one-slow-api-in-your-project) |
+| Q65 | Describe your application's architecture | [Jump →](#q65-describe-your-applications-architecture) |
+| Q66-Q70 | Authentication, Deployment, Monitoring, Exceptions, Redesign | [Jump →](#q66-q70-quick-answers) |
+
+### 🎁 Bonus: Additional Questions
+| # | Question | Link |
+|---|----------|------|
+| Q71 | Event Loop in Node.js | [Jump →](#q71-what-is-the-event-loop-in-nodejs-explain-with-example) |
+| Q72 | SQL vs NoSQL. When to use which? | [Jump →](#q72-difference-between-sql-and-nosql-when-to-use-which) |
+| Q73 | Design Patterns in Node.js | [Jump →](#q73-what-are-design-patterns-youve-used-in-nodejs) |
+| Q74 | Garbage Collection in Node.js | [Jump →](#q74-how-does-garbage-collection-work-in-nodejs) |
+| Q75 | REST API best practices | [Jump →](#q75-explain-rest-api-best-practices) |
+| Q76 | Monolithic vs Microservices | [Jump →](#q76-what-is-the-difference-between-monolithic-and-microservices-architecture) |
+| Q77 | Database migrations in production | [Jump →](#q77-how-do-you-handle-database-migrations-in-production) |
+| Q78 | WebSocket vs REST | [Jump →](#q78-explain-websocket-vs-rest-when-to-use-which) |
+| Q79 | Environment-specific configurations | [Jump →](#q79-how-do-you-handle-environment-specific-configurations) |
+| Q80 | Horizontal vs Vertical Scaling | [Jump →](#q80-what-is-horizontal-vs-vertical-scaling) |
+| Q81 | Virtual DOM | [Jump →](#q81-what-is-virtual-dom-and-how-does-it-work) |
+| Q82 | useEffect vs useLayoutEffect | [Jump →](#q82-useeffect-vs-uselayouteffect) |
+| Q83 | React performance optimization | [Jump →](#q83-how-do-you-optimize-react-performance) |
+| Q84 | State management (Context vs Redux vs Zustand) | [Jump →](#q84-what-is-state-management-when-to-use-context-vs-redux-vs-zustand) |
+
+---
+
+[⬆ Back to Top](#-table-of-contents-click-to-jump)
+
+---
+
+<a id="scenario-1-api-performance"></a>
 ## Scenario 1: API Performance
 
+<a id="q1-api-returns-1-lakh-100000-records-how-will-you-optimize-it"></a>
 ### Q1. API returns 1 lakh (100,000) records. How will you optimize it?
 
 **Answer:**
@@ -81,6 +235,7 @@ app.get('/api/products/export', async (req, res) => {
 
 ---
 
+<a id="q2-api-response-takes-15-seconds-what-will-you-check"></a>
 ### Q2. API response takes 15 seconds. What will you check?
 
 **Answer:**
@@ -137,6 +292,7 @@ app.use((req, res, next) => {
 
 ---
 
+<a id="q3-database-query-is-slow-how-will-you-debug-it"></a>
 ### Q3. Database query is slow. How will you debug it?
 
 **Answer:**
@@ -179,6 +335,7 @@ db.products.find({ $text: { $search: "phone" } });
 
 ---
 
+<a id="q4-how-will-you-identify-whether-the-issue-is-in-nodejs-or-database"></a>
 ### Q4. How will you identify whether the issue is in Node.js or Database?
 
 **Answer:**
@@ -228,6 +385,7 @@ app.get('/api/users', async (req, res) => {
 
 ---
 
+<a id="q5-api-is-consuming-high-cpu-what-steps-will-you-take"></a>
 ### Q5. API is consuming high CPU. What steps will you take?
 
 **Answer:**
@@ -273,6 +431,7 @@ app.get('/api/report', (req, res) => {
 
 ---
 
+<a id="q6-api-memory-usage-keeps-increasing-what-could-be-the-reason"></a>
 ### Q6. API memory usage keeps increasing. What could be the reason?
 
 **Answer:**
@@ -330,6 +489,7 @@ setInterval(() => {
 
 ---
 
+<a id="q7-api-works-fine-locally-but-is-slow-in-production-how-will-you-investigate"></a>
 ### Q7. API works fine locally but is slow in production. How will you investigate?
 
 **Answer:**
@@ -376,8 +536,10 @@ console.log('ENV:', process.env.NODE_ENV);
 
 ---
 
+<a id="scenario-2-mongodb"></a>
 ## Scenario 2: MongoDB
 
+<a id="q8-collection-has-5-crore-50-million-records-search-is-slow-what-will-you-do"></a>
 ### Q8. Collection has 5 crore (50 million) records. Search is slow. What will you do?
 
 **Answer:**
@@ -423,6 +585,7 @@ const results = await User.aggregate([
 
 ---
 
+<a id="q9-aggregation-pipeline-is-taking-20-seconds-how-will-you-optimize-it"></a>
 ### Q9. Aggregation pipeline is taking 20 seconds. How will you optimize it?
 
 **Answer:**
@@ -476,6 +639,7 @@ const result = await Order.aggregate([
 
 ---
 
+<a id="q10-which-fields-would-you-index-and-why"></a>
 ### Q10. Which fields would you index and why?
 
 **Answer:**
@@ -510,6 +674,7 @@ db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 86400 });
 
 ---
 
+<a id="q11-how-do-you-identify-missing-indexes"></a>
 ### Q11. How do you identify missing indexes?
 
 **Answer:**
@@ -541,6 +706,7 @@ mongoose.set('debug', true);
 
 ---
 
+<a id="q12-what-happens-if-you-create-indexes-on-every-field"></a>
 ### Q12. What happens if you create indexes on every field?
 
 **Answer:**
@@ -570,6 +736,7 @@ db.orders.createIndex({ userId: 1, status: 1, createdAt: -1 });
 
 ---
 
+<a id="q13-duplicate-records-are-getting-inserted-how-will-you-prevent-this"></a>
 ### Q13. Duplicate records are getting inserted. How will you prevent this?
 
 **Answer:**
@@ -622,6 +789,7 @@ app.post('/api/payments', async (req, res) => {
 
 ---
 
+<a id="q14-multiple-users-update-the-same-document-at-the-same-time-how-will-you-handle-it"></a>
 ### Q14. Multiple users update the same document at the same time. How will you handle it?
 
 **Answer:**
@@ -694,8 +862,10 @@ try {
 
 ---
 
+<a id="scenario-3-authentication"></a>
 ## Scenario 3: Authentication
 
+<a id="q15-jwt-token-expires-while-the-user-is-working-what-should-happen"></a>
 ### Q15. JWT token expires while the user is working. What should happen?
 
 **Answer:**
@@ -795,6 +965,7 @@ axios.interceptors.response.use(
 
 ---
 
+<a id="q16-a-user-logs-out-how-will-you-invalidate-the-jwt"></a>
 ### Q16. A user logs out. How will you invalidate the JWT?
 
 **Answer:**
@@ -852,6 +1023,7 @@ await User.updateOne({ _id: userId }, { $inc: { tokenVersion: 1 } });
 
 ---
 
+<a id="q17-someone-steals-a-jwt-token-how-can-you-reduce-the-impact"></a>
 ### Q17. Someone steals a JWT token. How can you reduce the impact?
 
 **Answer:**
@@ -904,6 +1076,7 @@ app.post('/api/auth/refresh', async (req, res) => {
 
 ---
 
+<a id="q18-admin-should-access-only-admin-apis-how-will-you-implement-it"></a>
 ### Q18. Admin should access only admin APIs. How will you implement it?
 
 **Answer:**
@@ -964,6 +1137,7 @@ const checkPermission = (requiredPermission) => {
 
 ---
 
+<a id="q19-users-are-making-requests-without-authentication-how-will-you-secure-the-apis"></a>
 ### Q19. Users are making requests without authentication. How will you secure the APIs?
 
 **Answer:**
@@ -1022,8 +1196,10 @@ app.use('/api/auth/login', loginLimiter);
 
 ---
 
+<a id="scenario-4-security"></a>
 ## Scenario 4: Security
 
+<a id="q20-your-api-is-receiving-10000-requests-per-minute-from-one-ip-what-will-you-do"></a>
 ### Q20. Your API is receiving 10,000 requests per minute from one IP. What will you do?
 
 **Answer:**
@@ -1090,6 +1266,7 @@ app.use((req, res, next) => {
 
 ---
 
+<a id="q21-someone-is-trying-sqlnosql-injection-how-will-you-prevent-it"></a>
 ### Q21. Someone is trying SQL/NoSQL Injection. How will you prevent it?
 
 **Answer:**
@@ -1153,6 +1330,7 @@ app.post('/api/auth/login', async (req, res) => {
 
 ---
 
+<a id="q22-how-do-you-protect-against-xss-attacks"></a>
 ### Q22. How do you protect against XSS attacks?
 
 **Answer:**
@@ -1216,6 +1394,7 @@ const escapeHtml = (str) => {
 
 ---
 
+<a id="q23-api-is-exposed-publicly-what-security-measures-will-you-implement-before-deployment"></a>
 ### Q23. API is exposed publicly. What security measures will you implement before deployment?
 
 **Answer:**
@@ -1285,6 +1464,7 @@ app.use((err, req, res, next) => {
 
 ---
 
+<a id="q24-passwords-are-stored-in-plain-text-in-an-old-project-how-would-you-migrate-to-hashed-passwords"></a>
 ### Q24. Passwords are stored in plain text in an old project. How would you migrate to hashed passwords?
 
 **Answer:**
@@ -1349,8 +1529,10 @@ async function login(email, password) {
 
 ---
 
+<a id="scenario-5-file-upload"></a>
 ## Scenario 5: File Upload
 
+<a id="q25-users-upload-5-gb-videos-how-will-you-handle-them"></a>
 ### Q25. Users upload 5 GB videos. How will you handle them?
 
 **Answer:**
@@ -1446,6 +1628,7 @@ app.post('/api/upload/initiate', async (req, res) => {
 
 ---
 
+<a id="q26-users-upload-100-images-simultaneously-what-problems-can-occur"></a>
 ### Q26. Users upload 100 images simultaneously. What problems can occur?
 
 **Answer:**
@@ -1516,6 +1699,7 @@ app.use((req, res, next) => {
 
 ---
 
+<a id="q27-how-will-you-validate-uploaded-files"></a>
 ### Q27. How will you validate uploaded files?
 
 **Answer:**
@@ -1581,6 +1765,7 @@ if (!allowedExtensions.includes(ext)) {
 
 ---
 
+<a id="q28-where-will-you-store-uploaded-files-in-aws"></a>
 ### Q28. Where will you store uploaded files in AWS?
 
 **Answer:**
@@ -1640,6 +1825,7 @@ async function getPresignedUrl(key) {
 
 ---
 
+<a id="q29-how-will-you-generate-unique-file-names"></a>
 ### Q29. How will you generate unique file names?
 
 **Answer:**
@@ -1688,8 +1874,10 @@ function generateFilePath(userId, originalName, type = 'images') {
 
 ---
 
+<a id="scenario-6-expressjs"></a>
 ## Scenario 6: Express.js
 
+<a id="q30-middleware-is-not-getting-executed-how-will-you-debug-it"></a>
 ### Q30. Middleware is not getting executed. How will you debug it?
 
 **Answer:**
@@ -1752,6 +1940,7 @@ app.get('/api/admin/users', (req, res) => { console.log('Handler reached'); });
 
 ---
 
+<a id="q31-a-request-never-reaches-the-controller-what-could-be-wrong"></a>
 ### Q31. A request never reaches the controller. What could be wrong?
 
 **Answer:**
@@ -1796,6 +1985,7 @@ app.use('*', (req, res) => {
 
 ---
 
+<a id="q32-api-always-returns-500-internal-server-error-how-will-you-debug-it"></a>
 ### Q32. API always returns 500 Internal Server Error. How will you debug it?
 
 **Answer:**
@@ -1857,6 +2047,7 @@ app.use(morgan('dev')); // Logs: GET /api/users 500 25ms
 
 ---
 
+<a id="q33-how-do-you-implement-centralized-error-handling"></a>
 ### Q33. How do you implement centralized error handling?
 
 **Answer:**
@@ -1964,8 +2155,10 @@ process.on('uncaughtException', (error) => {
 
 ---
 
+<a id="scenario-7-nodejs"></a>
 ## Scenario 7: Node.js
 
+<a id="q34-server-cpu-suddenly-reaches-100-how-will-you-investigate"></a>
 ### Q34. Server CPU suddenly reaches 100%. How will you investigate?
 
 **Answer:**
@@ -2027,6 +2220,7 @@ if (isMainThread) {
 
 ---
 
+<a id="q35-nodejs-server-crashes-every-few-hours-what-will-you-check-first"></a>
 ### Q35. Node.js server crashes every few hours. What will you check first?
 
 **Answer:**
@@ -2096,6 +2290,7 @@ app.get('/health', (req, res) => {
 
 ---
 
+<a id="q36-the-application-has-a-memory-leak-how-will-you-identify-it"></a>
 ### Q36. The application has a memory leak. How will you identify it?
 
 **Answer:**
@@ -2162,6 +2357,7 @@ memwatch.on('leak', (info) => {
 
 ---
 
+<a id="q37-a-long-running-calculation-blocks-all-requests-how-would-you-solve-this"></a>
 ### Q37. A long-running calculation blocks all requests. How would you solve this?
 
 **Answer:**
@@ -2253,6 +2449,7 @@ app.get('/api/report', (req, res) => {
 
 ---
 
+<a id="q38-a-third-party-api-is-taking-30-seconds-to-respond-how-will-you-protect-your-application"></a>
 ### Q38. A third-party API is taking 30 seconds to respond. How will you protect your application?
 
 **Answer:**
@@ -2333,8 +2530,10 @@ async function getExternalData(key) {
 
 ---
 
+<a id="scenario-8-docker"></a>
 ## Scenario 8: Docker
 
+<a id="q39-docker-container-starts-and-exits-immediately-what-are-the-possible-reasons"></a>
 ### Q39. Docker container starts and exits immediately. What are the possible reasons?
 
 **Answer:**
@@ -2399,6 +2598,7 @@ CMD ["node", "server.js"]
 
 ---
 
+<a id="q40-container-works-locally-but-not-on-the-server-how-will-you-debug-it"></a>
 ### Q40. Container works locally but not on the server. How will you debug it?
 
 **Answer:**
@@ -2468,6 +2668,7 @@ volumes:
 
 ---
 
+<a id="q41-environment-variables-are-missing-inside-the-container-what-will-you-check"></a>
 ### Q41. Environment variables are missing inside the container. What will you check?
 
 **Answer:**
@@ -2531,8 +2732,10 @@ ENV NODE_ENV=production  # Must declare again
 
 ---
 
+<a id="scenario-9-aws"></a>
 ## Scenario 9: AWS
 
+<a id="q42-ec2-instance-is-running-but-the-application-is-not-accessible-what-will-you-check"></a>
 ### Q42. EC2 instance is running but the application is not accessible. What will you check?
 
 **Answer:**
@@ -2588,6 +2791,7 @@ telnet <public-ip> 5000  # From outside - tests connectivity
 
 ---
 
+<a id="q43-users-cannot-upload-files-to-s3-what-are-the-possible-reasons"></a>
 ### Q43. Users cannot upload files to S3. What are the possible reasons?
 
 **Answer:**
@@ -2659,6 +2863,7 @@ try {
 
 ---
 
+<a id="q44-cloudwatch-shows-high-cpu-usage-how-will-you-proceed"></a>
 ### Q44. CloudWatch shows high CPU usage. How will you proceed?
 
 **Answer:**
@@ -2703,6 +2908,7 @@ Step-by-step approach:
 
 ---
 
+<a id="q45-application-becomes-unavailable-after-deployment-what-steps-will-you-take"></a>
 ### Q45. Application becomes unavailable after deployment. What steps will you take?
 
 **Answer:**
@@ -2751,8 +2957,10 @@ Immediate response:
 
 ---
 
+<a id="scenario-10-microservices"></a>
 ## Scenario 10: Microservices
 
+<a id="q46-one-microservice-is-down-how-will-other-services-behave"></a>
 ### Q46. One microservice is down. How will other services behave?
 
 **Answer:**
@@ -2826,6 +3034,7 @@ async function healthCheck() {
 
 ---
 
+<a id="q47-notification-service-is-slow-will-you-call-it-synchronously-or-asynchronously-why"></a>
 ### Q47. Notification service is slow. Will you call it synchronously or asynchronously? Why?
 
 **Answer:**
@@ -2882,6 +3091,7 @@ notificationQueue.process('orderPlaced', async (job) => {
 
 ---
 
+<a id="q48-how-will-two-microservices-communicate-securely"></a>
 ### Q48. How will two microservices communicate securely?
 
 **Answer:**
@@ -2934,6 +3144,7 @@ const serviceToken = jwt.sign(
 
 ---
 
+<a id="q49-how-will-you-trace-a-request-that-passes-through-multiple-microservices"></a>
 ### Q49. How will you trace a request that passes through multiple microservices?
 
 **Answer:**
@@ -3004,8 +3215,10 @@ app.get('/api/orders', async (req, res) => {
 
 ---
 
+<a id="scenario-11-caching"></a>
 ## Scenario 11: Caching
 
+<a id="q50-product-api-receives-50000-requests-per-minute-how-will-you-reduce-database-load"></a>
 ### Q50. Product API receives 50,000 requests per minute. How will you reduce database load?
 
 **Answer:**
@@ -3084,6 +3297,7 @@ app.put('/api/products/:id', async (req, res) => {
 
 ---
 
+<a id="q51-cached-data-becomes-outdated-how-will-you-refresh-or-invalidate-the-cache"></a>
 ### Q51. Cached data becomes outdated. How will you refresh or invalidate the cache?
 
 **Answer:**
@@ -3168,6 +3382,7 @@ async function getWithSWR(key, fetchFn, ttl = 300) {
 
 ---
 
+<a id="q52-redis-goes-down-how-should-the-application-behave"></a>
 ### Q52. Redis goes down. How should the application behave?
 
 **Answer:**
@@ -3262,8 +3477,10 @@ app.get('/health', async (req, res) => {
 
 ---
 
+<a id="scenario-12-logging-monitoring"></a>
 ## Scenario 12: Logging & Monitoring
 
+<a id="q53-production-issue-is-reported-but-no-one-can-reproduce-it-locally-how-will-you-investigate"></a>
 ### Q53. Production issue is reported but no one can reproduce it locally. How will you investigate?
 
 **Answer:**
@@ -3335,6 +3552,7 @@ if (process.env.DEBUG_MODE === 'true') {
 
 ---
 
+<a id="q54-users-report-intermittent-failures-which-logs-and-metrics-will-you-check"></a>
 ### Q54. Users report intermittent failures. Which logs and metrics will you check?
 
 **Answer:**
@@ -3405,6 +3623,7 @@ app.get('/health/detailed', async (req, res) => {
 
 ---
 
+<a id="q55-how-would-you-correlate-logs-across-multiple-services"></a>
 ### Q55. How would you correlate logs across multiple services?
 
 **Answer:**
@@ -3477,8 +3696,10 @@ async function callPaymentService(orderData, correlationId) {
 
 ---
 
+<a id="scenario-13-deployment-cicd"></a>
 ## Scenario 13: Deployment & CI/CD
 
+<a id="q56-deployment-failed-in-production-what-is-your-rollback-strategy"></a>
 ### Q56. Deployment failed in production. What is your rollback strategy?
 
 **Answer:**
@@ -3552,6 +3773,7 @@ spec:
 
 ---
 
+<a id="q57-tests-pass-locally-but-fail-in-the-ci-pipeline-what-could-be-the-reasons"></a>
 ### Q57. Tests pass locally but fail in the CI pipeline. What could be the reasons?
 
 **Answer:**
@@ -3631,6 +3853,7 @@ jobs:
 
 ---
 
+<a id="q58-how-do-you-ensure-zero-or-minimal-downtime-during-deployment"></a>
 ### Q58. How do you ensure zero or minimal downtime during deployment?
 
 **Answer:**
@@ -3691,8 +3914,10 @@ app.get('/health', (req, res) => {
 
 ---
 
+<a id="scenario-14-api-design"></a>
 ## Scenario 14: API Design
 
+<a id="q59-you-need-to-introduce-a-breaking-api-change-how-will-you-avoid-affecting-existing-clients"></a>
 ### Q59. You need to introduce a breaking API change. How will you avoid affecting existing clients?
 
 **Answer:**
@@ -3751,6 +3976,7 @@ app.use('/api/v1', (req, res, next) => {
 
 ---
 
+<a id="q60-two-different-teams-consume-your-api-how-will-you-maintain-backward-compatibility"></a>
 ### Q60. Two different teams consume your API. How will you maintain backward compatibility?
 
 **Answer:**
@@ -3825,8 +4051,10 @@ app.get('/api/products', async (req, res) => {
 
 ---
 
+<a id="scenario-15-project-based-questions"></a>
 ## Scenario 15: Project-Based Questions
 
+<a id="q61-explain-one-api-you-built-from-end-to-end"></a>
 ### Q61. Explain one API you built from end to end.
 
 **Answer (Example: E-commerce Order API):**
@@ -3905,6 +4133,7 @@ const createOrder = asyncHandler(async (req, res) => {
 
 ---
 
+<a id="q62-which-part-of-your-project-are-you-most-proud-of-and-why"></a>
 ### Q62. Which part of your project are you most proud of and why?
 
 **Answer Framework:**
@@ -3944,6 +4173,7 @@ WHY I'M PROUD:
 
 ---
 
+<a id="q63-tell-us-about-the-most-challenging-production-bug-you-fixed"></a>
 ### Q63. Tell us about the most challenging production bug you fixed.
 
 **Answer Framework:**
@@ -3979,6 +4209,7 @@ PREVENTION:
 
 ---
 
+<a id="q64-how-did-you-optimize-one-slow-api-in-your-project"></a>
 ### Q64. How did you optimize one slow API in your project?
 
 **Answer Example:**
@@ -4040,6 +4271,7 @@ app.get('/api/dashboard', async (req, res) => {
 
 ---
 
+<a id="q65-describe-your-applications-architecture"></a>
 ### Q65. Describe your application's architecture.
 
 **Answer Template:**
@@ -4090,6 +4322,7 @@ Infrastructure:
 
 ---
 
+<a id="q66-q70-quick-answers"></a>
 ### Q66-Q70 Quick Answers:
 
 **Q66. How did you implement authentication?**
@@ -4131,8 +4364,10 @@ Infrastructure:
 
 ---
 
+<a id="bonus-additional-high-frequency-interview-questions"></a>
 ## Bonus: Additional High-Frequency Interview Questions
 
+<a id="q71-what-is-the-event-loop-in-nodejs-explain-with-example"></a>
 ### Q71. What is the Event Loop in Node.js? Explain with example.
 
 **Answer:**
@@ -4176,6 +4411,7 @@ console.log('6. End');                             // Sync - runs second
 
 ---
 
+<a id="q72-difference-between-sql-and-nosql-when-to-use-which"></a>
 ### Q72. Difference between SQL and NoSQL. When to use which?
 
 **Answer:**
@@ -4212,6 +4448,7 @@ An e-commerce app might use BOTH:
 
 ---
 
+<a id="q73-what-are-design-patterns-youve-used-in-nodejs"></a>
 ### Q73. What are Design Patterns you've used in Node.js?
 
 **Answer:**
@@ -4277,6 +4514,7 @@ class ProductRepository {
 
 ---
 
+<a id="q74-how-does-garbage-collection-work-in-nodejs"></a>
 ### Q74. How does Garbage Collection work in Node.js?
 
 **Answer:**
@@ -4327,6 +4565,7 @@ app.get('/api/data', (req, res) => {
 
 ---
 
+<a id="q75-explain-rest-api-best-practices"></a>
 ### Q75. Explain REST API best practices.
 
 **Answer:**
@@ -4393,6 +4632,7 @@ GET /api/products/:productId/reviews // Reviews for a product
 
 ---
 
+<a id="q76-what-is-the-difference-between-monolithic-and-microservices-architecture"></a>
 ### Q76. What is the difference between Monolithic and Microservices architecture?
 
 **Answer:**
@@ -4435,6 +4675,7 @@ MY APPROACH:
 
 ---
 
+<a id="q77-how-do-you-handle-database-migrations-in-production"></a>
 ### Q77. How do you handle database migrations in production?
 
 **Answer:**
@@ -4509,6 +4750,7 @@ async function batchMigrate(db) {
 
 ---
 
+<a id="q78-explain-websocket-vs-rest-when-to-use-which"></a>
 ### Q78. Explain WebSocket vs REST. When to use which?
 
 **Answer:**
@@ -4575,6 +4817,7 @@ io.on('connection', (socket) => {
 
 ---
 
+<a id="q79-how-do-you-handle-environment-specific-configurations"></a>
 ### Q79. How do you handle environment-specific configurations?
 
 **Answer:**
@@ -4630,6 +4873,7 @@ module.exports = config[process.env.NODE_ENV || 'development'];
 
 ---
 
+<a id="q80-what-is-horizontal-vs-vertical-scaling"></a>
 ### Q80. What is Horizontal vs Vertical Scaling?
 
 **Answer:**
@@ -4671,8 +4915,10 @@ Requirements for horizontal scaling:
 
 ---
 
+<a id="bonus-react-frontend-interview-questions"></a>
 ## Bonus: React/Frontend Interview Questions
 
+<a id="q81-what-is-virtual-dom-and-how-does-it-work"></a>
 ### Q81. What is Virtual DOM and how does it work?
 
 **Answer:**
@@ -4707,6 +4953,7 @@ function Counter() {
 
 ---
 
+<a id="q82-useeffect-vs-uselayouteffect"></a>
 ### Q82. useEffect vs useLayoutEffect?
 
 **Answer:**
@@ -4734,6 +4981,7 @@ useLayoutEffect(() => {
 
 ---
 
+<a id="q83-how-do-you-optimize-react-performance"></a>
 ### Q83. How do you optimize React performance?
 
 **Answer:**
@@ -4792,6 +5040,7 @@ const handleClick = useCallback(() => handle(id), [id]);
 
 ---
 
+<a id="q84-what-is-state-management-when-to-use-context-vs-redux-vs-zustand"></a>
 ### Q84. What is state management? When to use Context vs Redux vs Zustand?
 
 **Answer:**

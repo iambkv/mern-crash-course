@@ -3,6 +3,97 @@
 
 ---
 
+## 📋 Table of Contents (Click to Jump)
+
+### 🧠 Core Concepts
+| # | Topic | Link |
+|---|-------|------|
+| 1 | Event Loop & Call Stack | [Jump →](#1-event-loop--call-stack) |
+| 2 | Closures & Lexical Scope | [Jump →](#2-closures--lexical-scope) |
+| 3 | Prototypal Inheritance | [Jump →](#3-prototypal-inheritance) |
+| 4 | Promises, Async/Await, Microtasks | [Jump →](#4-promises-asyncawait-microtasks) |
+| 5 | React Diffing Algorithm (Reconciliation) | [Jump →](#5-react-diffing-algorithm-reconciliation) |
+| 6 | Web Vitals (LCP, CLS, INP) | [Jump →](#6-web-vitals-lcp-cls-inp) |
+| 7 | Critical Rendering Path | [Jump →](#7-critical-rendering-path) |
+| 8 | Code Splitting & Lazy Loading | [Jump →](#8-code-splitting--lazy-loading) |
+| 9 | Image Optimization | [Jump →](#9-image-optimization) |
+| 10 | Intersection Observer | [Jump →](#10-intersection-observer) |
+
+### ⚡ Real-Time & Advanced
+| # | Topic | Link |
+|---|-------|------|
+| 11 | WebSockets & SSE | [Jump →](#11-websockets--sse-server-sent-events) |
+| 12 | Service Workers & PWA | [Jump →](#12-service-workers--pwa) |
+| 13 | Debounce & Throttle | [Jump →](#13-debounce--throttle) |
+| 14 | React Fiber Architecture | [Jump →](#14-react-fiber-architecture) |
+| 15 | Concurrent Mode (React 18+) | [Jump →](#15-concurrent-mode-react-18) |
+| 16 | Hydration (Progressive / Partial / Selective) | [Jump →](#16-hydration-progressive--partial--selective) |
+| 17 | Virtual List / Windowing | [Jump →](#17-virtual-list--windowing) |
+| 18 | Tree Shaking | [Jump →](#18-tree-shaking) |
+| 19 | Browser Caching Strategies | [Jump →](#19-browser-caching-strategies) |
+| 20 | Bundle Analysis & Optimization | [Jump →](#20-bundle-analysis--optimization) |
+
+### 🎨 CSS & Architecture
+| # | Topic | Link |
+|---|-------|------|
+| 21 | CSS Containment | [Jump →](#21-css-containment) |
+| 22 | Container Queries | [Jump →](#22-container-queries) |
+| 23 | Atomic Design | [Jump →](#23-atomic-design) |
+| 24 | Design Patterns (Observer, Singleton, Factory) | [Jump →](#24-design-patterns-observer-singleton-factory) |
+| 25 | State Management Patterns (Flux, Zustand, Jotai) | [Jump →](#25-state-management-patterns-flux-zustand-jotai) |
+| 26 | MutationObserver | [Jump →](#26-mutationobserver) |
+| 27 | IndexedDB & Storage APIs | [Jump →](#27-indexeddb--storage-apis) |
+| 28 | Memory Management & Garbage Collection | [Jump →](#28-memory-management--garbage-collection) |
+| 29 | Web Workers | [Jump →](#29-web-workers) |
+
+### 🚀 Modern Frameworks & Patterns
+| # | Topic | Link |
+|---|-------|------|
+| 30 | Incremental Static Regeneration (ISR) | [Jump →](#30-incremental-static-regeneration-isr) |
+| 31 | Island Architecture | [Jump →](#31-island-architecture) |
+| 32 | Time Slicing | [Jump →](#32-time-slicing) |
+| 33 | CSS Layers (@layer) | [Jump →](#33-css-layers-layer) |
+| 34 | Subgrid | [Jump →](#34-subgrid) |
+| 35 | CSS Houdini | [Jump →](#35-css-houdini) |
+| 36 | Micro Frontend Architecture | [Jump →](#36-micro-frontend-architecture) |
+| 37 | Module Federation | [Jump →](#37-module-federation) |
+
+### 🎯 Scenario-Based Questions
+| # | Scenario | Link |
+|---|----------|------|
+| 1 | Performance Optimization | [Jump →](#scenario-1-performance-optimization) |
+| 2 | React Performance | [Jump →](#scenario-2-react-performance) |
+| 3 | State Management | [Jump →](#scenario-3-state-management) |
+| 4 | Accessibility | [Jump →](#scenario-4-accessibility) |
+| 5 | Error Handling | [Jump →](#scenario-5-error-handling) |
+| 6 | SEO & SSR | [Jump →](#scenario-6-seo--ssr) |
+| 7 | Real-time Features | [Jump →](#scenario-7-real-time-features) |
+| 8 | Testing | [Jump →](#scenario-8-testing) |
+
+### 💡 Bonus: Commonly Asked Questions
+| # | Question | Link |
+|---|----------|------|
+| 1 | What are React hooks rules and why? | [Jump →](#q-what-are-react-hooks-rules-and-why) |
+| 2 | Explain useRef vs useState vs useCallback vs useMemo | [Jump →](#q-explain-useref-vs-usestate-vs-usecallback-vs-usememo) |
+| 3 | How does React Context work and when NOT to use it? | [Jump →](#q-how-does-react-context-work-and-when-not-to-use-it) |
+| 4 | Controlled vs Uncontrolled components | [Jump →](#q-explain-the-difference-between-controlled-and-uncontrolled-components) |
+| 5 | What is React Server Components (RSC)? | [Jump →](#q-what-is-react-server-components-rsc) |
+| 6 | How do you handle authentication in a React app? | [Jump →](#q-how-do-you-handle-authentication-in-a-react-app) |
+| 7 | What is the difference between CSR, SSR, SSG, and ISR? | [Jump →](#q-what-is-the-difference-between-csr-ssr-ssg-and-isr) |
+
+### 📊 Quick Reference
+| Topic | Link |
+|-------|------|
+| Top 20 Frontend Concepts Table | [Jump →](#quick-reference-top-20-frontend-concepts-for-interviews) |
+| Interview Tips | [Jump →](#interview-tips-for-frontend-roles) |
+
+---
+
+[⬆ Back to Top](#-table-of-contents-click-to-jump)
+
+---
+
+<a id="1-event-loop--call-stack"></a>
 ## 1. Event Loop & Call Stack
 
 ### Concept Explanation
@@ -128,6 +219,7 @@ function processWhenIdle(tasks) {
 
 ---
 
+<a id="2-closures--lexical-scope"></a>
 ## 2. Closures & Lexical Scope
 
 ### Concept Explanation
@@ -263,6 +355,7 @@ function useState(initialValue) {
 
 ---
 
+<a id="3-prototypal-inheritance"></a>
 ## 3. Prototypal Inheritance
 
 ### Concept Explanation
@@ -354,6 +447,7 @@ const john = myNew(Person, 'John');
 
 ---
 
+<a id="4-promises-asyncawait-microtasks"></a>
 ## 4. Promises, Async/Await, Microtasks
 
 ### Concept Explanation
@@ -526,6 +620,7 @@ async function fetchWithRetry(url, retries = 3, delay = 1000) {
 
 ---
 
+<a id="5-react-diffing-algorithm-reconciliation"></a>
 ## 5. React Diffing Algorithm (Reconciliation)
 
 ### Concept Explanation
@@ -629,6 +724,7 @@ function Layout({ showSidebar }) {
 
 ---
 
+<a id="6-web-vitals-lcp-cls-inp"></a>
 ## 6. Web Vitals (LCP, CLS, INP)
 
 ### Concept Explanation
@@ -794,6 +890,7 @@ worker.onmessage = (e) => {
 
 ---
 
+<a id="7-critical-rendering-path"></a>
 ## 7. Critical Rendering Path
 
 ### Concept Explanation
@@ -865,6 +962,7 @@ BLOCKING RESOURCES:
 
 ---
 
+<a id="8-code-splitting--lazy-loading"></a>
 ## 8. Code Splitting & Lazy Loading
 
 ### Concept Explanation
@@ -967,6 +1065,7 @@ const AdminPanel = lazy(() =>
 
 ---
 
+<a id="9-image-optimization"></a>
 ## 9. Image Optimization
 
 ### Concept Explanation
@@ -1064,6 +1163,7 @@ function LazyImage({ src, alt, placeholder, className, ...props }) {
 
 ---
 
+<a id="10-intersection-observer"></a>
 ## 10. Intersection Observer
 
 ### Concept Explanation
@@ -1169,6 +1269,7 @@ function InfiniteScrollList() {
 
 ---
 
+<a id="11-websockets--sse-server-sent-events"></a>
 ## 11. WebSockets & SSE (Server-Sent Events)
 
 ### Concept Explanation
@@ -1325,6 +1426,7 @@ function ChatRoom() {
 
 ---
 
+<a id="12-service-workers--pwa"></a>
 ## 12. Service Workers & PWA
 
 ### Concept Explanation
@@ -1439,6 +1541,7 @@ self.addEventListener('fetch', (event) => {
 
 ---
 
+<a id="13-debounce--throttle"></a>
 ## 13. Debounce & Throttle
 
 ### Concept Explanation
@@ -1578,6 +1681,7 @@ function SearchInput() {
 
 ---
 
+<a id="14-react-fiber-architecture"></a>
 ## 14. React Fiber Architecture
 
 ### Concept Explanation
@@ -1671,6 +1775,7 @@ requestIdleCallback(workLoop);
 
 ---
 
+<a id="15-concurrent-mode-react-18"></a>
 ## 15. Concurrent Mode (React 18+)
 
 ### Concept Explanation
@@ -1789,6 +1894,7 @@ flushSync(() => setFlag(f => !f));     // Forces another re-render
 
 ---
 
+<a id="16-hydration-progressive--partial--selective"></a>
 ## 16. Hydration (Progressive / Partial / Selective)
 
 ### Concept Explanation
@@ -1911,6 +2017,7 @@ function ProgressiveHydration({ children, whenVisible = false, whenIdle = false 
 
 ---
 
+<a id="17-virtual-list--windowing"></a>
 ## 17. Virtual List / Windowing
 
 ### Concept Explanation
@@ -2043,6 +2150,7 @@ function useVariableVirtualList(items, containerHeight, estimatedHeight = 50) {
 
 ---
 
+<a id="18-tree-shaking"></a>
 ## 18. Tree Shaking
 
 ### Concept Explanation
@@ -2136,6 +2244,7 @@ export function formatPhoneNumber() {}
 
 ---
 
+<a id="19-browser-caching-strategies"></a>
 ## 19. Browser Caching Strategies
 
 ### Concept Explanation
@@ -2242,6 +2351,7 @@ function useLocalStorageCache(key, fetchFn, ttl = 60000) {
 
 ---
 
+<a id="20-bundle-analysis--optimization"></a>
 ## 20. Bundle Analysis & Optimization
 
 ### Concept Explanation
@@ -2314,6 +2424,7 @@ export default {
 
 ---
 
+<a id="21-css-containment"></a>
 ## 21. CSS Containment
 
 ### Concept Explanation
@@ -2400,6 +2511,7 @@ article > section {
 
 ---
 
+<a id="22-container-queries"></a>
 ## 22. Container Queries
 
 ### Concept Explanation
@@ -2483,6 +2595,7 @@ article > section {
 
 ---
 
+<a id="23-atomic-design"></a>
 ## 23. Atomic Design
 
 ### Concept Explanation
@@ -2600,6 +2713,7 @@ function DashboardPage() {
 
 ---
 
+<a id="24-design-patterns-observer-singleton-factory"></a>
 ## 24. Design Patterns (Observer, Singleton, Factory)
 
 ### Interview Questions:
@@ -2766,6 +2880,7 @@ function DynamicForm({ config, onSubmit }) {
 
 ---
 
+<a id="25-state-management-patterns-flux-zustand-jotai"></a>
 ## 25. State Management Patterns (Flux, Zustand, Jotai)
 
 ### Interview Questions:
@@ -2887,6 +3002,7 @@ function TodoList() {
 
 ---
 
+<a id="26-mutationobserver"></a>
 ## 26. MutationObserver
 
 ### Concept Explanation
@@ -2965,6 +3081,7 @@ function AdContainer() {
 
 ---
 
+<a id="27-indexeddb--storage-apis"></a>
 ## 27. IndexedDB & Storage APIs
 
 ### Concept Explanation
@@ -3095,6 +3212,7 @@ function useOfflineProducts() {
 
 ---
 
+<a id="28-memory-management--garbage-collection"></a>
 ## 28. Memory Management & Garbage Collection
 
 ### Interview Questions:
@@ -3164,6 +3282,7 @@ const elementCache = new WeakMap(); // Elements can be GC'd
 
 ---
 
+<a id="29-web-workers"></a>
 ## 29. Web Workers
 
 ### Concept Explanation
@@ -3259,6 +3378,7 @@ const worker = new Worker(new URL('./worker.js', import.meta.url), { type: 'modu
 
 ---
 
+<a id="30-incremental-static-regeneration-isr"></a>
 ## 30. Incremental Static Regeneration (ISR)
 
 ### Concept Explanation
@@ -3320,6 +3440,7 @@ Decision tree:
 
 ---
 
+<a id="31-island-architecture"></a>
 ## 31. Island Architecture
 
 ### Interview Questions:
@@ -3363,6 +3484,7 @@ Decision tree:
 
 ---
 
+<a id="32-time-slicing"></a>
 ## 32. Time Slicing
 
 ### Concept Explanation
@@ -3460,6 +3582,7 @@ function SearchWithFilters() {
 
 ---
 
+<a id="33-css-layers-layer"></a>
 ## 33. CSS Layers (@layer)
 
 ### Concept Explanation
@@ -3549,6 +3672,7 @@ function SearchWithFilters() {
 
 ---
 
+<a id="34-subgrid"></a>
 ## 34. Subgrid
 
 ### Concept Explanation
@@ -3594,6 +3718,7 @@ function SearchWithFilters() {
 
 ---
 
+<a id="35-css-houdini"></a>
 ## 35. CSS Houdini
 
 ### Concept Explanation
@@ -3658,6 +3783,7 @@ registerPaint('checkerboard', CheckerboardPainter);
 
 ---
 
+<a id="36-micro-frontend-architecture"></a>
 ## 36. Micro Frontend Architecture
 
 ### Concept Explanation
@@ -3751,6 +3877,7 @@ function Shell() {
 
 ---
 
+<a id="37-module-federation"></a>
 ## 37. Module Federation
 
 ### Concept Explanation
@@ -3820,10 +3947,14 @@ function ShellApp() {
 
 ---
 
+<a id="scenario-based-interview-questions"></a>
 ## Scenario-Based Interview Questions
+
+[⬆ Back to Table of Contents](#-table-of-contents-click-to-jump)
 
 ---
 
+<a id="scenario-1-performance-optimization"></a>
 ### Scenario 1: Performance Optimization
 
 **Q: Users report your e-commerce page takes 8 seconds to load. How do you investigate and fix?**
@@ -3872,6 +4003,7 @@ const { data } = useQuery({
 
 ---
 
+<a id="scenario-2-react-performance"></a>
 ### Scenario 2: React Performance
 
 **Q: A React component re-renders 50 times when user types in search input. How to fix?**
@@ -3942,6 +4074,7 @@ worker.onmessage = (e) => setFilteredResults(e.data);
 
 ---
 
+<a id="scenario-3-state-management"></a>
 ### Scenario 3: State Management
 
 **Q: You have a complex form with 20+ fields, validation, and conditional logic. How do you manage state?**
@@ -4035,6 +4168,7 @@ function ComplexForm() {
 
 ---
 
+<a id="scenario-4-accessibility"></a>
 ### Scenario 4: Accessibility
 
 **Q: How do you make a custom dropdown accessible?**
@@ -4132,6 +4266,7 @@ function AccessibleDropdown({ options, value, onChange, label }) {
 
 ---
 
+<a id="scenario-5-error-handling"></a>
 ### Scenario 5: Error Handling
 
 **Q: How do you implement a robust error handling strategy in a React application?**
@@ -4233,6 +4368,7 @@ window.addEventListener('error', (event) => {
 
 ---
 
+<a id="scenario-6-seo--ssr"></a>
 ### Scenario 6: SEO & SSR
 
 **Q: Your React SPA has poor SEO. How do you fix it?**
@@ -4310,6 +4446,7 @@ function ProductPage({ product }) {
 
 ---
 
+<a id="scenario-7-real-time-features"></a>
 ### Scenario 7: Real-time Features
 
 **Q: Build a real-time collaborative text indicator ("User is typing...")**
@@ -4388,6 +4525,7 @@ function CollaborativeChat({ roomId }) {
 
 ---
 
+<a id="scenario-8-testing"></a>
 ### Scenario 8: Testing
 
 **Q: How do you test a complex React component that fetches data and handles user interactions?**
@@ -4485,10 +4623,14 @@ describe('ProductSearch', () => {
 
 ---
 
+<a id="bonus-commonly-asked-frontend-interview-questions"></a>
 ## Bonus: Commonly Asked Frontend Interview Questions
+
+[⬆ Back to Table of Contents](#-table-of-contents-click-to-jump)
 
 ---
 
+<a id="q-what-are-react-hooks-rules-and-why"></a>
 ### Q: What are React hooks rules and why?
 
 ```javascript
@@ -4525,6 +4667,7 @@ function Component({ isLoggedIn }) {
 
 ---
 
+<a id="q-explain-useref-vs-usestate-vs-usecallback-vs-usememo"></a>
 ### Q: Explain useRef vs useState vs useCallback vs useMemo
 
 ```javascript
@@ -4558,6 +4701,7 @@ const handleClick = useCallback(() => {
 
 ---
 
+<a id="q-how-does-react-context-work-and-when-not-to-use-it"></a>
 ### Q: How does React Context work and when NOT to use it?
 
 ```javascript
@@ -4608,6 +4752,7 @@ const useCartStore = create(set => ({ cart: [], addItem: (item) => {...} }));
 
 ---
 
+<a id="q-explain-the-difference-between-controlled-and-uncontrolled-components"></a>
 ### Q: Explain the difference between controlled and uncontrolled components
 
 ```javascript
@@ -4649,6 +4794,7 @@ function UncontrolledInput() {
 
 ---
 
+<a id="q-what-is-react-server-components-rsc"></a>
 ### Q: What is React Server Components (RSC)?
 
 ```javascript
@@ -4705,6 +4851,7 @@ function AddToCartButton({ productId }) {
 
 ---
 
+<a id="q-how-do-you-handle-authentication-in-a-react-app"></a>
 ### Q: How do you handle authentication in a React app?
 
 ```javascript
@@ -4821,6 +4968,7 @@ axios.interceptors.response.use(
 
 ---
 
+<a id="q-what-is-the-difference-between-csr-ssr-ssg-and-isr"></a>
 ### Q: What is the difference between CSR, SSR, SSG, and ISR?
 
 ```
@@ -4844,6 +4992,7 @@ HYBRID (modern approach):
 
 ---
 
+<a id="quick-reference-top-20-frontend-concepts-for-interviews"></a>
 ## Quick Reference: Top 20 Frontend Concepts for Interviews
 
 | # | Concept | Key Takeaway |
@@ -4871,6 +5020,7 @@ HYBRID (modern approach):
 
 ---
 
+<a id="interview-tips-for-frontend-roles"></a>
 ## Interview Tips for Frontend Roles
 
 1. **Always explain the "why"** — Don't just say "use useMemo", explain WHY it helps
