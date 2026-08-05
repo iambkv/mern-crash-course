@@ -3,11 +3,105 @@
 
 ---
 
+## 📋 Table of Contents (Click to Jump)
+
+### 🔤 STRING Problems
+| # | Question | Link |
+|---|----------|------|
+| 1 | Reverse a string | [Jump →](#s1-reverse-a-string) |
+| 2 | Check if a string is palindrome | [Jump →](#s2-check-if-a-string-is-palindrome) |
+| 3 | Find duplicate characters in a string | [Jump →](#s3-find-duplicate-characters-in-a-string) |
+| 4 | Find first non-repeating character | [Jump →](#s4-find-first-non-repeating-character) |
+| 5 | Check two strings are anagram or not | [Jump →](#s5-check-two-strings-are-anagram-or-not) |
+| 6 | Count character occurrence in a string | [Jump →](#s6-count-character-occurrence-in-a-string) |
+| 7 | Reverse words in a sentence | [Jump →](#s7-reverse-words-in-a-sentence) |
+| 8 | Find longest word in a string | [Jump →](#s8-find-longest-word-in-a-string) |
+| 9 | Remove duplicate characters from string | [Jump →](#s9-remove-duplicate-characters-from-string) |
+| 10 | Check string contains only digits | [Jump →](#s10-check-string-contains-only-digits) |
+| 11 | Convert string to title case | [Jump →](#s11-convert-string-to-title-case) |
+| 12 | Count vowels and consonants | [Jump →](#s12-count-vowels-and-consonants) |
+| 13 | Find substring inside a string | [Jump →](#s13-find-substring-inside-a-string) |
+| 14 | Check string rotation | [Jump →](#s14-check-string-rotation) |
+| 15 | Compress string (aaabb → a3b2) | [Jump →](#s15-compress-string-aaabb--a3b2) |
+| 16 | Replace spaces with %20 | [Jump →](#s16-replace-spaces-with-20) |
+| 17 | Find all permutations of string | [Jump →](#s17-find-all-permutations-of-string) |
+| 18 | Remove special characters | [Jump →](#s18-remove-special-characters) |
+| 19 | Find repeated words in a sentence | [Jump →](#s19-find-repeated-words-in-a-sentence) |
+| 20 | Check balanced brackets in string | [Jump →](#s20-check-balanced-brackets-in-string) |
+
+### 📦 ARRAY Problems
+| # | Question | Link |
+|---|----------|------|
+| 1 | Reverse an array | [Jump →](#a1-reverse-an-array) |
+| 2 | Find max and min in array | [Jump →](#a2-find-max-and-min-in-array) |
+| 3 | Find second largest number | [Jump →](#a3-find-second-largest-number) |
+| 4 | Remove duplicate elements | [Jump →](#a4-remove-duplicate-elements) |
+| 5 | Find missing number in array | [Jump →](#a5-find-missing-number-in-array) |
+| 6 | Find duplicate numbers | [Jump →](#a6-find-duplicate-numbers) |
+| 7 | Sort array without sort() | [Jump →](#a7-sort-array-without-sort) |
+| 8 | Merge two sorted arrays | [Jump →](#a8-merge-two-sorted-arrays) |
+| 9 | Find intersection of two arrays | [Jump →](#a9-find-intersection-of-two-arrays) |
+| 10 | Find union of two arrays | [Jump →](#a10-find-union-of-two-arrays) |
+| 11 | Move all zeros to end | [Jump →](#a11-move-all-zeros-to-end) |
+| 12 | Rotate array left/right | [Jump →](#a12-rotate-array-leftright) |
+| 13 | Find sum pair equals target (Two Sum) | [Jump →](#a13-find-sum-pair-equals-target-two-sum) |
+| 14 | Find largest sum of subarray (Kadane) | [Jump →](#a14-find-largest-sum-of-subarray-kadanes-algorithm) |
+| 15 | Count frequency of elements | [Jump →](#a15-count-frequency-of-elements) |
+| 16 | Flatten a nested array | [Jump →](#a16-flatten-a-nested-array) |
+| 17 | Find common elements in multiple arrays | [Jump →](#a17-find-common-elements-in-multiple-arrays) |
+| 18 | Split array into chunks | [Jump →](#a18-split-array-into-chunks) |
+| 19 | Check array is palindrome | [Jump →](#a19-check-array-is-palindrome) |
+| 20 | Find longest consecutive sequence | [Jump →](#a20-find-longest-consecutive-sequence) |
+
+### 🧩 OBJECT Problems
+| # | Question | Link |
+|---|----------|------|
+| 1 | Count frequency using object | [Jump →](#o1-count-frequency-using-object) |
+| 2 | Convert object to array and array to object | [Jump →](#o2-convert-object-to-array-and-array-to-object) |
+| 3 | Find key with maximum value | [Jump →](#o3-find-key-with-maximum-value) |
+| 4 | Deep clone an object | [Jump →](#o4-deep-clone-an-object) |
+| 5 | Shallow vs Deep copy | [Jump →](#o5-shallow-vs-deep-copy) |
+| 6 | Compare two objects for equality | [Jump →](#o6-compare-two-objects-for-equality) |
+| 7 | Remove a property from object | [Jump →](#o7-remove-a-property-from-object) |
+| 8 | Sort object by values | [Jump →](#o8-sort-object-by-values) |
+| 9 | Merge two objects | [Jump →](#o9-merge-two-objects) |
+| 10 | Check if key exists in object | [Jump →](#o10-check-if-key-exists-in-object) |
+| 11 | Get all keys having same value | [Jump →](#o11-get-all-keys-having-same-value) |
+| 12 | Convert nested object to flat object | [Jump →](#o12-convert-nested-object-to-flat-object) |
+| 13 | Access dynamic object keys | [Jump →](#o13-access-dynamic-object-keys) |
+| 14 | Group objects by property | [Jump →](#o14-group-objects-by-property) |
+| 15 | Remove duplicate objects from array | [Jump →](#o15-remove-duplicate-objects-from-array) |
+| 16 | Find duplicate values in object | [Jump →](#o16-find-duplicate-values-in-object) |
+| 17 | Freeze vs Seal object | [Jump →](#o17-freeze-vs-seal-object) |
+| 18 | Iterate object without for...in | [Jump →](#o18-iterate-object-without-forin) |
+| 19 | Transform object structure | [Jump →](#o19-transform-object-structure) |
+| 20 | Count nested object properties | [Jump →](#o20-count-nested-object-properties) |
+
+### 🔥 MIXED Problems (Very Important)
+| # | Question | Link |
+|---|----------|------|
+| 1 | Implement debounce | [Jump →](#m1-implement-debounce) |
+| 2 | Implement throttle | [Jump →](#m2-implement-throttle) |
+| 3 | Polyfill of map / filter / reduce | [Jump →](#m3-polyfill-of-map--filter--reduce) |
+| 4 | Closure based counter | [Jump →](#m4-closure-based-counter) |
+| 5 | Output based questions (var / let / const) | [Jump →](#m5-output-based-questions-var--let--const) |
+| 6 | Promise vs async/await scenarios | [Jump →](#m6-promise-vs-asyncawait-scenarios) |
+| 7 | Event bubbling & capturing examples | [Jump →](#m7-event-bubbling--capturing-examples) |
+| 8 | Call, Apply, Bind implementation | [Jump →](#m8-call-apply-bind-implementation) |
+| 9 | Currying function | [Jump →](#m9-currying-function) |
+| 10 | Memoization function | [Jump →](#m10-memoization-function) |
+
+---
+
+[⬆ Back to Top](#-table-of-contents-click-to-jump)
+
+---
+
 ## STRING Problems
 
 ---
 
-### 1. Reverse a String
+### <a id="s1-reverse-a-string"></a>1. Reverse a String
 
 ```javascript
 // Approach 1: Built-in methods
@@ -51,7 +145,7 @@ console.log(reverseString('JavaScript')); // "tpircSavaJ"
 
 ---
 
-### 2. Check if a String is Palindrome
+### <a id="s2-check-if-a-string-is-palindrome"></a>2. Check if a String is Palindrome
 
 ```javascript
 // A palindrome reads same forward and backward: "madam", "racecar"
@@ -89,7 +183,7 @@ console.log(isPalindrome('hello'));      // false
 
 ---
 
-### 3. Find Duplicate Characters in a String
+### <a id="s3-find-duplicate-characters-in-a-string"></a>3. Find Duplicate Characters in a String
 
 ```javascript
 function findDuplicates(str) {
@@ -124,7 +218,7 @@ console.log(findDuplicates('hello world'));
 
 ---
 
-### 4. Find First Non-Repeating Character
+### <a id="s4-find-first-non-repeating-character"></a>4. Find First Non-Repeating Character
 
 ```javascript
 function firstNonRepeating(str) {
@@ -171,7 +265,7 @@ console.log(firstNonRepeating('javascript')); // 'j'
 
 ---
 
-### 5. Check Two Strings are Anagram or Not
+### <a id="s5-check-two-strings-are-anagram-or-not"></a>5. Check Two Strings are Anagram or Not
 
 ```javascript
 // Anagram: Same characters, different arrangement
@@ -219,7 +313,7 @@ console.log(isAnagram('Astronomer', 'Moon starer')); // true (if spaces removed)
 
 ---
 
-### 6. Count Character Occurrence in a String
+### <a id="s6-count-character-occurrence-in-a-string"></a>6. Count Character Occurrence in a String
 
 ```javascript
 function countOccurrence(str, target) {
@@ -256,7 +350,7 @@ console.log(countAllChars('javascript'));
 
 ---
 
-### 7. Reverse Words in a Sentence
+### <a id="s7-reverse-words-in-a-sentence"></a>7. Reverse Words in a Sentence
 
 ```javascript
 // "Hello World JavaScript" → "JavaScript World Hello"
@@ -296,7 +390,7 @@ console.log(reverseWords('  the sky  is blue  '));   // "blue is sky the"
 
 ---
 
-### 8. Find Longest Word in a String
+### <a id="s8-find-longest-word-in-a-string"></a>8. Find Longest Word in a String
 
 ```javascript
 function longestWord(str) {
@@ -330,7 +424,7 @@ console.log(longestWord('I love JavaScript programming')); // "programming"
 
 ---
 
-### 9. Remove Duplicate Characters from String
+### <a id="s9-remove-duplicate-characters-from-string"></a>9. Remove Duplicate Characters from String
 
 ```javascript
 // "programming" → "progamin"
@@ -368,7 +462,7 @@ console.log(removeDuplicates('hello'));       // "helo"
 
 ---
 
-### 10. Check String Contains Only Digits
+### <a id="s10-check-string-contains-only-digits"></a>10. Check String Contains Only Digits
 
 ```javascript
 // Approach 1: Regex
@@ -404,7 +498,7 @@ console.log(isOnlyDigits('00123'));   // true
 
 ---
 
-### 11. Convert String to Title Case
+### <a id="s11-convert-string-to-title-case"></a>11. Convert String to Title Case
 
 ```javascript
 // "hello world javascript" → "Hello World Javascript"
@@ -433,7 +527,7 @@ console.log(toTitleCase('the quick brown fox'));  // "The Quick Brown Fox"
 
 ---
 
-### 12. Count Vowels and Consonants
+### <a id="s12-count-vowels-and-consonants"></a>12. Count Vowels and Consonants
 
 ```javascript
 function countVowelsConsonants(str) {
@@ -465,7 +559,7 @@ console.log(countVowelsConsonants('JavaScript'));
 
 ---
 
-### 13. Find Substring Inside a String
+### <a id="s13-find-substring-inside-a-string"></a>13. Find Substring Inside a String
 
 ```javascript
 // Without using includes() or indexOf()
@@ -515,7 +609,7 @@ console.log(findAllOccurrences('abcabcabc', 'abc')); // [0, 3, 6]
 
 ---
 
-### 14. Check String Rotation
+### <a id="s14-check-string-rotation"></a>14. Check String Rotation
 
 ```javascript
 // "abcde" rotated = "cdeab", "deabc", etc.
@@ -543,7 +637,7 @@ console.log(isRotation('hello', 'llohe')); // true
 
 ---
 
-### 15. Compress String (aaabb → a3b2)
+### <a id="s15-compress-string-aaabb--a3b2"></a>15. Compress String (aaabb → a3b2)
 
 ```javascript
 function compressString(str) {
@@ -576,7 +670,7 @@ console.log(compressString('abc'));        // "abc" (compressed "a1b1c1" is long
 
 ---
 
-### 16. Replace Spaces with %20
+### <a id="s16-replace-spaces-with-20"></a>16. Replace Spaces with %20
 
 ```javascript
 // URL encoding style: "hello world" → "hello%20world"
@@ -611,7 +705,7 @@ console.log(replaceSpaces('Mr John Smith'));   // "Mr%20John%20Smith"
 
 ---
 
-### 17. Find All Permutations of String
+### <a id="s17-find-all-permutations-of-string"></a>17. Find All Permutations of String
 
 ```javascript
 // "abc" → ["abc", "acb", "bac", "bca", "cab", "cba"]
@@ -677,7 +771,7 @@ console.log(getPermutations('abc'));
 
 ---
 
-### 18. Remove Special Characters
+### <a id="s18-remove-special-characters"></a>18. Remove Special Characters
 
 ```javascript
 function removeSpecialChars(str) {
@@ -714,7 +808,7 @@ console.log(removeSpecialChars('test@#$%email.com'));      // "testemailcom"
 
 ---
 
-### 19. Find Repeated Words in a Sentence
+### <a id="s19-find-repeated-words-in-a-sentence"></a>19. Find Repeated Words in a Sentence
 
 ```javascript
 function findRepeatedWords(str) {
@@ -750,7 +844,7 @@ console.log(findRepeatedWords('the cat sat on the mat the'));
 
 ---
 
-### 20. Check Balanced Brackets in String
+### <a id="s20-check-balanced-brackets-in-string"></a>20. Check Balanced Brackets in String
 
 ```javascript
 // "{[()]}" → true, "{[(])}" → false
@@ -789,9 +883,11 @@ console.log(isBalanced(''));        // true
 
 ## ARRAY Problems
 
+[⬆ Back to Table of Contents](#-table-of-contents-click-to-jump)
+
 ---
 
-### 1. Reverse an Array
+### <a id="a1-reverse-an-array"></a>1. Reverse an Array
 
 ```javascript
 // Approach 1: Built-in
@@ -828,7 +924,7 @@ console.log(reverseArray(['a', 'b', 'c'])); // ['c', 'b', 'a']
 
 ---
 
-### 2. Find Max and Min in Array
+### <a id="a2-find-max-and-min-in-array"></a>2. Find Max and Min in Array
 
 ```javascript
 // Approach 1: Built-in
@@ -860,7 +956,7 @@ console.log(findMaxMin([-5, 0, 10, -3]));     // { max: 10, min: -5 }
 
 ---
 
-### 3. Find Second Largest Number
+### <a id="a3-find-second-largest-number"></a>3. Find Second Largest Number
 
 ```javascript
 function secondLargest(arr) {
@@ -892,7 +988,7 @@ console.log(secondLargest([1, 2]));              // 1
 
 ---
 
-### 4. Remove Duplicate Elements
+### <a id="a4-remove-duplicate-elements"></a>4. Remove Duplicate Elements
 
 ```javascript
 // Approach 1: Set (simplest)
@@ -932,7 +1028,7 @@ console.log(removeDuplicates(['a', 'b', 'a', 'c']));   // ['a', 'b', 'c']
 
 ---
 
-### 5. Find Missing Number in Array
+### <a id="a5-find-missing-number-in-array"></a>5. Find Missing Number in Array
 
 ```javascript
 // Array of 1 to n with one number missing
@@ -970,7 +1066,7 @@ console.log(findMissing([1, 2, 3, 5], 5));      // 4
 
 ---
 
-### 6. Find Duplicate Numbers
+### <a id="a6-find-duplicate-numbers"></a>6. Find Duplicate Numbers
 
 ```javascript
 // Find all duplicates in an array
@@ -1014,7 +1110,7 @@ console.log(findDuplicates([1, 2, 3, 4, 5]));        // []
 
 ---
 
-### 7. Sort Array Without sort()
+### <a id="a7-sort-array-without-sort"></a>7. Sort Array Without sort()
 
 ```javascript
 // Bubble Sort (simplest to implement in interview)
@@ -1082,7 +1178,7 @@ console.log(bubbleSort([64, 34, 25, 12, 22, 11, 90]));
 
 ---
 
-### 8. Merge Two Sorted Arrays
+### <a id="a8-merge-two-sorted-arrays"></a>8. Merge Two Sorted Arrays
 
 ```javascript
 function mergeSorted(arr1, arr2) {
@@ -1122,7 +1218,7 @@ console.log(mergeSorted([1, 1, 3], [2, 4, 4]));
 
 ---
 
-### 9. Find Intersection of Two Arrays
+### <a id="a9-find-intersection-of-two-arrays"></a>9. Find Intersection of Two Arrays
 
 ```javascript
 // Elements common to both arrays
@@ -1162,7 +1258,7 @@ console.log(intersection([1, 2, 2, 3], [2, 2, 3, 4]));  // [2, 3]
 
 ---
 
-### 10. Find Union of Two Arrays
+### <a id="a10-find-union-of-two-arrays"></a>10. Find Union of Two Arrays
 
 ```javascript
 function union(arr1, arr2) {
@@ -1194,7 +1290,7 @@ console.log(union([1, 1, 2], [2, 3, 3]));  // [1, 2, 3]
 
 ---
 
-### 11. Move All Zeros to End
+### <a id="a11-move-all-zeros-to-end"></a>11. Move All Zeros to End
 
 ```javascript
 function moveZerosToEnd(arr) {
@@ -1243,7 +1339,7 @@ console.log(moveZerosToEnd([0, 0, 1]));         // [1, 0, 0]
 
 ---
 
-### 12. Rotate Array Left/Right
+### <a id="a12-rotate-array-leftright"></a>12. Rotate Array Left/Right
 
 ```javascript
 // Rotate Right by k positions: [1,2,3,4,5], k=2 → [4,5,1,2,3]
@@ -1290,7 +1386,7 @@ console.log(rotateLeft([1, 2, 3, 4, 5], 2));   // [3, 4, 5, 1, 2]
 
 ---
 
-### 13. Find Sum Pair Equals Target (Two Sum)
+### <a id="a13-find-sum-pair-equals-target-two-sum"></a>13. Find Sum Pair Equals Target (Two Sum)
 
 ```javascript
 // Find two numbers that add up to target
@@ -1342,7 +1438,7 @@ console.log(twoSum([3, 5, 1, 8], 9));        // [2, 3] (indices of 1 and 8)
 
 ---
 
-### 14. Find Largest Sum of Subarray (Kadane's Algorithm)
+### <a id="a14-find-largest-sum-of-subarray-kadanes-algorithm"></a>14. Find Largest Sum of Subarray (Kadane's Algorithm)
 
 ```javascript
 // Find contiguous subarray with maximum sum
@@ -1397,7 +1493,7 @@ console.log(maxSubarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
 ---
 
-### 15. Count Frequency of Elements
+### <a id="a15-count-frequency-of-elements"></a>15. Count Frequency of Elements
 
 ```javascript
 function countFrequency(arr) {
@@ -1432,7 +1528,7 @@ console.log(countFrequency(['apple', 'banana', 'apple', 'cherry', 'banana', 'app
 
 ---
 
-### 16. Flatten a Nested Array
+### <a id="a16-flatten-a-nested-array"></a>16. Flatten a Nested Array
 
 ```javascript
 // [1, [2, [3, [4]]], 5] → [1, 2, 3, 4, 5]
@@ -1492,7 +1588,7 @@ console.log(flatten([[1, 2], [3, [4, 5]], 6]));  // [1, 2, 3, 4, 5, 6]
 
 ---
 
-### 17. Find Common Elements in Multiple Arrays
+### <a id="a17-find-common-elements-in-multiple-arrays"></a>17. Find Common Elements in Multiple Arrays
 
 ```javascript
 function findCommon(...arrays) {
@@ -1528,7 +1624,7 @@ console.log(findCommon([1, 2], [3, 4], [5, 6]));               // []
 
 ---
 
-### 18. Split Array into Chunks
+### <a id="a18-split-array-into-chunks"></a>18. Split Array into Chunks
 
 ```javascript
 function chunkArray(arr, size) {
@@ -1565,7 +1661,7 @@ console.log(chunkArray([1, 2, 3, 4], 2));
 
 ---
 
-### 19. Check Array is Palindrome
+### <a id="a19-check-array-is-palindrome"></a>19. Check Array is Palindrome
 
 ```javascript
 function isArrayPalindrome(arr) {
@@ -1597,7 +1693,7 @@ console.log(isArrayPalindrome(['a', 'b', 'a']));    // true
 
 ---
 
-### 20. Find Longest Consecutive Sequence
+### <a id="a20-find-longest-consecutive-sequence"></a>20. Find Longest Consecutive Sequence
 
 ```javascript
 // [100, 4, 200, 1, 3, 2] → longest sequence: [1, 2, 3, 4] → length = 4
@@ -1641,9 +1737,11 @@ console.log(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])); // 9 (0-8)
 
 ## OBJECT Problems
 
+[⬆ Back to Table of Contents](#-table-of-contents-click-to-jump)
+
 ---
 
-### 1. Count Frequency Using Object
+### <a id="o1-count-frequency-using-object"></a>1. Count Frequency Using Object
 
 ```javascript
 function countFrequency(arr) {
@@ -1679,7 +1777,7 @@ console.log(charFrequency('hello'));
 
 ---
 
-### 2. Convert Object to Array and Array to Object
+### <a id="o2-convert-object-to-array-and-array-to-object"></a>2. Convert Object to Array and Array to Object
 
 ```javascript
 // Object to Array
@@ -1721,7 +1819,7 @@ console.log(usersById);
 
 ---
 
-### 3. Find Key with Maximum Value
+### <a id="o3-find-key-with-maximum-value"></a>3. Find Key with Maximum Value
 
 ```javascript
 function keyWithMaxValue(obj) {
@@ -1756,7 +1854,7 @@ console.log(keyWithMaxValue({ js: 90, python: 85, java: 78 })); // 'js'
 
 ---
 
-### 4. Deep Clone an Object
+### <a id="o4-deep-clone-an-object"></a>4. Deep Clone an Object
 
 ```javascript
 // Shallow copy: Only top-level is copied, nested objects are still references
@@ -1813,7 +1911,7 @@ console.log(original.hobbies);      // ['reading', 'coding'] (unchanged!)
 
 ---
 
-### 5. Shallow vs Deep Copy
+### <a id="o5-shallow-vs-deep-copy"></a>5. Shallow vs Deep Copy
 
 ```javascript
 // ========= SHALLOW COPY =========
@@ -1850,7 +1948,7 @@ console.log(original.address.city); // Still 'Delhi' — independent!
 
 ---
 
-### 6. Compare Two Objects for Equality
+### <a id="o6-compare-two-objects-for-equality"></a>6. Compare Two Objects for Equality
 
 ```javascript
 // obj1 === obj2 won't work! (compares references, not values)
@@ -1892,7 +1990,7 @@ console.log(deepEqual({ a: 1 }, { a: 1, b: 2 }));                     // false
 
 ---
 
-### 7. Remove a Property from Object
+### <a id="o7-remove-a-property-from-object"></a>7. Remove a Property from Object
 
 ```javascript
 // Method 1: delete operator (mutates original)
@@ -1929,7 +2027,7 @@ console.log(removeProperties(user2, ['password', 'token']));
 
 ---
 
-### 8. Sort Object by Values
+### <a id="o8-sort-object-by-values"></a>8. Sort Object by Values
 
 ```javascript
 function sortByValues(obj, order = 'asc') {
@@ -1959,7 +2057,7 @@ console.log(sortByValues(scores, 'asc'));
 
 ---
 
-### 9. Merge Two Objects
+### <a id="o9-merge-two-objects"></a>9. Merge Two Objects
 
 ```javascript
 // Shallow merge
@@ -2002,7 +2100,7 @@ console.log(deepMerge(defaults, userPrefs));
 
 ---
 
-### 10. Check if Key Exists in Object
+### <a id="o10-check-if-key-exists-in-object"></a>10. Check if Key Exists in Object
 
 ```javascript
 const user = { name: 'John', age: 30, email: undefined };
@@ -2030,7 +2128,7 @@ console.log(user.email !== undefined); // false — WRONG! key exists!
 
 ---
 
-### 11. Get All Keys Having Same Value
+### <a id="o11-get-all-keys-having-same-value"></a>11. Get All Keys Having Same Value
 
 ```javascript
 function keysWithSameValue(obj, targetValue) {
@@ -2065,7 +2163,7 @@ console.log(groupKeysByValue(roles));
 
 ---
 
-### 12. Convert Nested Object to Flat Object
+### <a id="o12-convert-nested-object-to-flat-object"></a>12. Convert Nested Object to Flat Object
 
 ```javascript
 // { a: { b: { c: 1 } }, d: 2 } → { 'a.b.c': 1, d: 2 }
@@ -2126,7 +2224,7 @@ console.log(unflattenObject({ 'a.b.c': 1, 'd': 2 }));
 
 ---
 
-### 13. Access Dynamic Object Keys
+### <a id="o13-access-dynamic-object-keys"></a>13. Access Dynamic Object Keys
 
 ```javascript
 // Bracket notation for dynamic keys
@@ -2171,7 +2269,7 @@ console.log(getNestedValue(data, 'user.invalid.path'));   // undefined (safe!)
 
 ---
 
-### 14. Group Objects by Property
+### <a id="o14-group-objects-by-property"></a>14. Group Objects by Property
 
 ```javascript
 function groupBy(arr, key) {
@@ -2220,7 +2318,7 @@ console.log(groupBy(products, (item) => item.price > 100 ? 'expensive' : 'cheap'
 
 ---
 
-### 15. Remove Duplicate Objects from Array
+### <a id="o15-remove-duplicate-objects-from-array"></a>15. Remove Duplicate Objects from Array
 
 ```javascript
 // Based on specific property
@@ -2277,7 +2375,7 @@ console.log(removeDuplicateObjects(users, 'id'));
 
 ---
 
-### 16. Find Duplicate Values in Object
+### <a id="o16-find-duplicate-values-in-object"></a>16. Find Duplicate Values in Object
 
 ```javascript
 function findDuplicateValues(obj) {
@@ -2313,7 +2411,7 @@ console.log(findDuplicateValues(data));
 
 ---
 
-### 17. Freeze vs Seal Object
+### <a id="o17-freeze-vs-seal-object"></a>17. Freeze vs Seal Object
 
 ```javascript
 // Object.freeze() — Cannot add, remove, or modify properties
@@ -2357,7 +2455,7 @@ console.log(Object.isSealed(sealed));  // true
 
 ---
 
-### 18. Iterate Object Without for...in
+### <a id="o18-iterate-object-without-forin"></a>18. Iterate Object Without for...in
 
 ```javascript
 const user = { name: 'John', age: 30, city: 'Mumbai' };
@@ -2392,7 +2490,7 @@ Object.getOwnPropertyNames(user).forEach(key => {
 
 ---
 
-### 19. Transform Object Structure
+### <a id="o19-transform-object-structure"></a>19. Transform Object Structure
 
 ```javascript
 // Rename keys
@@ -2444,7 +2542,7 @@ console.log(mapValues(prices, (v) => v * 1.1)); // { apple: 110, banana: 55, che
 
 ---
 
-### 20. Count Nested Object Properties
+### <a id="o20-count-nested-object-properties"></a>20. Count Nested Object Properties
 
 ```javascript
 function countProperties(obj) {
@@ -2502,9 +2600,11 @@ console.log(countLeafProperties(config)); // 6 (only leaf values: localhost, 270
 
 ## MIXED Problems (Very Important!)
 
+[⬆ Back to Table of Contents](#-table-of-contents-click-to-jump)
+
 ---
 
-### 1. Implement Debounce
+### <a id="m1-implement-debounce"></a>1. Implement Debounce
 
 ```javascript
 // Debounce: Execute function AFTER user stops performing action for X ms
@@ -2566,7 +2666,7 @@ expensiveSearch('hello');
 
 ---
 
-### 2. Implement Throttle
+### <a id="m2-implement-throttle"></a>2. Implement Throttle
 
 ```javascript
 // Throttle: Execute function at most ONCE per X ms
@@ -2631,7 +2731,7 @@ const throttledScroll = throttle(() => {
 
 ---
 
-### 3. Polyfill of map / filter / reduce
+### <a id="m3-polyfill-of-map--filter--reduce"></a>3. Polyfill of map / filter / reduce
 
 ```javascript
 // ========= Array.prototype.map Polyfill =========
@@ -2707,7 +2807,7 @@ console.log([[1,2],[3,4],[5]].myReduce((acc, cur) => acc.concat(cur), [])); // [
 
 ---
 
-### 4. Closure Based Counter
+### <a id="m4-closure-based-counter"></a>4. Closure Based Counter
 
 ```javascript
 // Basic counter
@@ -2765,7 +2865,7 @@ console.log(getId()); // 3
 
 ---
 
-### 5. Output Based Questions (var / let / const)
+### <a id="m5-output-based-questions-var--let--const"></a>5. Output Based Questions (var / let / const)
 
 ```javascript
 // ========= Question 1: var hoisting =========
@@ -2828,7 +2928,7 @@ console.log(a); // 1 (global a unchanged)
 
 ---
 
-### 6. Promise vs Async/Await Scenarios
+### <a id="m6-promise-vs-asyncawait-scenarios"></a>6. Promise vs Async/Await Scenarios
 
 ```javascript
 // ========= Question 1: Promise execution order =========
@@ -2908,7 +3008,7 @@ Promise.allSettled(promises).then(results => console.log(results));
 
 ---
 
-### 7. Event Bubbling & Capturing Examples
+### <a id="m7-event-bubbling--capturing-examples"></a>7. Event Bubbling & Capturing Examples
 
 ```javascript
 // Event Propagation: Capturing (top→down) → Target → Bubbling (bottom→up)
@@ -2970,7 +3070,7 @@ document.getElementById('list').addEventListener('click', (e) => {
 
 ---
 
-### 8. Call, Apply, Bind Implementation
+### <a id="m8-call-apply-bind-implementation"></a>8. Call, Apply, Bind Implementation
 
 ```javascript
 // call, apply, bind = methods to set 'this' context
@@ -3036,7 +3136,7 @@ console.log(bound('!!'));                         // "Hey, John!!"
 
 ---
 
-### 9. Currying Function
+### <a id="m9-currying-function"></a>9. Currying Function
 
 ```javascript
 // Currying: Transform f(a, b, c) into f(a)(b)(c)
@@ -3110,7 +3210,7 @@ console.log(+sum(1)(2)(3)); // 6
 
 ---
 
-### 10. Memoization Function
+### <a id="m10-memoization-function"></a>10. Memoization Function
 
 ```javascript
 // Memoization: Cache expensive function results based on arguments
