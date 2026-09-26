@@ -50,7 +50,7 @@ const LoginPage = () => {
                         bgClip={"text"}
                         fontWeight={"extrabold"}
                     >
-                        Welcome Back Admin
+                        Welcome Back
                     </Heading>
                     <Text
                         fontSize={"lg"}
