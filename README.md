@@ -119,4 +119,44 @@ docker images
 docker rmi mern-app
 ```
 
-The commands in this section use `Dockerfile` directly; they do not use `docker-compose.yml`. The current Compose file overrides the image's start command with `npm run build`, so `docker compose up` builds and exits instead of keeping the application server running.
+The commands above use `Dockerfile` directly; they do not use `docker-compose.yml`.
+
+## Run with Docker Compose
+
+Compose reads `docker-compose.yml`, builds the app image from the `Dockerfile`, passes settings to the container, and publishes port 5000. The Compose file uses `.env` for `MONGO_URI` and sets `NODE_ENV=production`. The app connects to the MongoDB server specified by `MONGO_URI`; Compose does not start a MongoDB container.
+
+If you started the app with `docker run` above, stop that container first because it is already using port 5000:
+
+```powershell
+# Stop the manually-created container, if it is running.
+docker stop mern-app
+```
+
+Then start the app with Compose:
+
+```powershell
+# Build the image if needed, then start the app in the foreground.
+# Logs appear in this terminal; Ctrl+C stops the Compose app.
+docker compose up --build
+```
+
+Or run it in the background:
+
+```powershell
+# -d runs in the background; --build rebuilds the image if needed.
+docker compose up --build -d
+
+# Follow app logs; Ctrl+C stops following logs but leaves the app running.
+docker compose logs -f app
+
+# Stop containers but keep them so they can be started again.
+docker compose stop
+
+# Start the stopped Compose containers again.
+docker compose start
+
+# Stop and remove the Compose containers and its default network.
+docker compose down
+```
+
+After changing app code, run `docker compose up --build -d` to rebuild and start the updated app. Compose creates its own container and network from the service definition; no separate `docker build` or long `docker run` command is needed for this workflow.
