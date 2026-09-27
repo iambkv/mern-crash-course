@@ -50,7 +50,7 @@ const LoginPage = () => {
                         bgClip={"text"}
                         fontWeight={"extrabold"}
                     >
-                        Welcome Back Bharat
+                        Welcome Back Bharat Sharma
                     </Heading>
                     <Text
                         fontSize={"lg"}
