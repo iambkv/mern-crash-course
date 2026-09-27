@@ -15,8 +15,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install dependencies including dev dependencies
+        run: npm ci --include=dev --no-audit --no-fund
+        timeout-minutes: 5
+
       - name: Run controller tests
-        run: npm test -- --runInBand
+        run: npm run test -- --runInBand
+        timeout-minutes: 5
 
       - name: Trigger Render deploy hook
         env:
